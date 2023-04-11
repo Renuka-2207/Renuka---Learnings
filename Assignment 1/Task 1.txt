@@ -1,0 +1,5 @@
+1. Create single html file
+2. Include external JavaScript
+3. In html file, have login form with username, password and login button
+4. After entering username and password, and then clicking Login button, get the login form to disappear.
+5. Show message "Welcome username to our dashboard".
