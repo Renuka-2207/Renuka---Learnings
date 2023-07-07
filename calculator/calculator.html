@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+    <link rel = "stylesheet" href = "CSS/calculator-style.css">
+</head>
+<body>
+    <div id = "container"> 
+<div id = "parent">
+<!--Container for text box -->
+<div id = "textboxcontainer" aria-live = "polite">
+<label for = "editbox"> Input/Output edit box: </label>
+<input id = "editbox" type = "text">
+<!-- A paragraph to store deleted character.  It will be off screen -->
+<p style = "margin:-10000;" id = "deletedcharacter"> </p> 
+</div>    
+<!-- Container for calculator buttons -->
+<div id = "buttoncontainer">
+<! Table to display all the buttons in rows and columns form -->
+<table>
+    
+        <tr>
+            <td>
+<!--Using HTML entity to display percentage sign -->
+                <button id = "percent" onclick = "calculatePercentage()"> &percnt; </button>
+            </td>
+            <td>
+                <button id = "seven" onclick = "numericButtonClick('7')"> 7 </button>
+            </td>
+            <td>
+                <button id = "eight" onclick = "numericButtonClick('8')"> 8 </button>
+            </td>
+            <td>
+                <button id = "nine" onclick = "numericButtonClick('9')"> 9 </button>
+            </td>
+            <td>
+<!-- Using HTML entity to display division sign -->
+            <button id = "division" onclick = "numericButtonClick('/')"> &divide;	 </button>
+            </td>
+            </tr>
+        <tr>
+            <td>
+<!-- Using HTML entity to display square root sign -->
+                <button id = "sqrt" onclick = "calculateSquareRoot()"> &#8730;  </button>
+            </td>
+            <td>
+                <button id = "four" onclick = "numericButtonClick('4')"> 4 </button>
+            </td>
+            <td>
+                <button id = "five" onclick = "numericButtonClick('5')"> 5 </button> 
+            </td>
+            <td>
+                <button id = "six" onclick = "numericButtonClick('6')"> 6 </button>
+            </td>
+            <td>
+<!-- Using HTML entity to display multiplication sign -->
+                <button id = "multiply" onclick = "numericButtonClick('*')"> &times; </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+<!-- Button to delete the last character or digit -->
+<!-- Calling two functions here one to delete the character and other to hide the paragraph for screen reader users also using set time out function -->
+<!--skiping set time out function for now as it is not giving required results -->
+                <button id = "delete" onclick = "deleteLastCharacter()" aria-label = "delete last character"> Delete </button>
+            </td>
+            <td>
+                <button id = "one" onclick = "numericButtonClick('1')"> 1 </button>
+            </td>
+            <td>
+                <button id = "two" onclick = "numericButtonClick('2')"> 2 </button>
+            </td>
+            <td>
+                <button id = "three" onclick = "numericButtonClick('3')"> 3 </button>
+            </td>
+            <td>
+<!-- Using HTML entity to display subtraction sign -->
+                <button id = "minus" onclick = "numericButtonClick('-')"> &minus; </button>
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <button id = "clear" onclick = "clearDisplay()" aria-label = "clear"> CE </button>
+            </td>
+            <td>
+                <button id = "dot" onclick = "numericButtonClick('.')"> . </button>
+                </td>
+            <td>
+                <button id = "zero" onclick = "numericButtonClick('0')"> 0 </button>
+            </td>
+            <td>
+<!-- Using HTML entity to display equal sign -->
+                <button id = "equal" onclick = "showAnswer()"> &equals;</button>
+            </td>
+            <td>
+<!-- Using HTML entity to display addition sign -->
+                <button id = "plus" onclick = "numericButtonClick('+')"> &plus; </button>
+                </td>
+            </tr>
+    
+</table>
+</div>
+</div>
+<script src = "JavaScript/calculator.js"> </script>
+    </body>
+    </html>

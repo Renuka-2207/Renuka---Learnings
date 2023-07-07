@@ -1,0 +1,51 @@
+#container
+{
+    width: 1000px;
+    height: 1000px;
+}
+/* styling the parent container */
+#parent 
+{
+    width: 98%;
+    height: 98%;
+    border:2px outset;
+}
+/* Styling the text box container */
+#textboxcontainer
+{
+width:99%;
+height:14%;
+border:1px solid black;
+font-weight:bold;
+background-color:gold;
+}
+/* Styling the buttons container */
+#buttoncontainer
+{
+    width:99%;
+    height:80%;    
+    marging:8px;
+}
+/* Styling the input text field */
+input 
+{
+    width: 97%;
+    height: 88%;
+    background-color:gold;
+    font-size: 30px;
+}
+/* Styling the table */
+table{
+    border:1px solid black;
+border-collapsed:collapsed;
+}
+/* Styling the buttons */
+button{
+    background-color:black;
+    color:white;
+    font-weight:bold;
+font-family:cursive;
+font-size: 20px;
+border:1px solid;
+border-radius:10%;
+}
