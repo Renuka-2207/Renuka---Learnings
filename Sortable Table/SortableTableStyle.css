@@ -1,0 +1,66 @@
+/* Content to be displayed when button will receive focus. */
+button:focus::after
+{
+    content:"Click to sort";
+    position:absolute;
+    bottom:100%;
+    right:50%;
+}
+
+/* Style to be applied when button will receive focus. */
+button:focus
+{
+    background-color:skyblue;
+    color:red;
+    border:1px inset black;
+    margin:10px;
+    padding:auto;
+    border-radius:15%;
+    font-size:15pt;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bolder;
+}
+
+/* Content to be displayed when button will receive hover. */
+Button:hover::after{
+    content:"Click to sort";
+    position:absolute;
+    bottom:100%;
+    right:50%;
+}
+
+/* Style to be applied when button will receive hover */
+button:hover
+{
+    background-color:skyblue;
+    color:red;
+    border:1px inset black;
+    margin:10px;
+    padding:auto;
+    border-radius:15%;
+    font-size:15pt;
+    font-family:'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+}
+
+/* Style to be applied on table, table head and cell data. */
+th, td 
+{
+    border:1px outset black;
+    margin:20px;
+    padding:15px;
+}
+
+table 
+{
+    border:1px outset black;
+    border-collapse:collapse;
+    margin:auto;
+    width:80%;
+    padding:auto;
+}
+
+h1{
+    text-align:center;
+}

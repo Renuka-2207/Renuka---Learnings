@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Sortable Table</title>
+	<link rel = "stylesheet" href = "SortableTableStyle.css"/>
+</head>
+<body>
+	<h1>Sortable Table</h1>
+	<table id = "mytable" border = "1">
+		<caption> Students Details</caption>
+		<thead>
+			<tr>
+				<th> 
+					<button class = "hidden" id = "btn1" onclick = "ascendingFirstName()">First Name </button>
+					<button class = "hidden" id = "btn1a" style = "display:none;" onclick = "descendingFirstName()"> First Name </button>
+				</th>
+				<th>
+					<button id = "btn2" onclick = "ascendingLastName()"> Last Name </button>
+					<button id = "btn2a" style = "display:none;" onclick = "descendingLastName()"> Last Name </button>
+				</th>
+				<th>Email ID</th>
+				<th>Contact Number</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class = "rows">
+				<td class = "firstname">Sahil</td>
+				<td>Sharma </td>
+				<td>sahil@gmail.com</td>
+				<td>1234567890</td>
+			</tr>
+			<tr class = "rows">
+				<td class = "firstname">Arjun</td>
+				<td>Talwar </td>
+				<td>arjun@gmail.com</td>
+				<td>9876543211</td>
+			</tr>
+			<tr class = "rows">
+				<td class = "firstname">Bhawana </td>
+				<td>Khanna</td>
+				<td>bhawana@gmail.com</td>
+				<td>234512345</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script src = "SortableTableScript.js">
+</script>
+</body>
+</html>
